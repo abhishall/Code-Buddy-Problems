@@ -40,4 +40,5 @@ public class SeatingArrangement {
 			System.out.println();
 		}
 	}
+	
 }
