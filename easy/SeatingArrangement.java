@@ -28,7 +28,7 @@ public class SeatingArrangement {
 					nonWindow++;
 					count--;
 				}
-				if (m == 0) {
+				if (count == 0) {
 					break;
 				}
 				if (window <= m) {
