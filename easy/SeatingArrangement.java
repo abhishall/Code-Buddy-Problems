@@ -4,7 +4,6 @@ Problem: https://codebuddy.co.in/problems/SEATING
 */
 
 package easy;
-
 import java.util.Scanner;
 public class SeatingArrangement {
 
