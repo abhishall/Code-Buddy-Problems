@@ -4,7 +4,6 @@ Problem: https://codebuddy.co.in/problems/SEATING
 */
 
 package easy;
-
 import java.util.Scanner;
 
 public class SeatingArrangement {
@@ -13,19 +12,20 @@ public class SeatingArrangement {
 		Scanner scn = new Scanner(System.in);
 		int T = scn.nextInt();
 		while (T-- > 0) {
-			int n = scn.nextInt();
+			int num = scn.nextInt();
 			int m = scn.nextInt();
 
 			int count = m;
 			int window = 1;
-			int nonWindow = 2 * n + 1;
+			int notWindow = 2 * num + 1;
+			
 			while (count > 0) {
 				if (count == 0) {
 					break;
 				}
-				if (nonWindow <= m) {
-					System.out.print(nonWindow + " ");
-					nonWindow++;
+				if (notWindow <= m) {
+					System.out.print(notWindow + " ");
+					notWindow++;
 					count--;
 				}
 				if (count == 0) {
@@ -39,6 +39,7 @@ public class SeatingArrangement {
 			}
 			System.out.println();
 		}
+		scn.close();
 	}
 	
 }
